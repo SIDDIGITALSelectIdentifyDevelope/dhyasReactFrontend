@@ -1,0 +1,33 @@
+.voter-details-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .voter-details-content {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .voter-info {
+    font-size: 16px;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .edit-button, .print-button, .whatsapp-button {
+    margin-right: 10px;
+  }
+  

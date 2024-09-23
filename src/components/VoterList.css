@@ -1,0 +1,118 @@
+.voter-list-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* Light background for contrast */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.filter-input {
+  flex: 1 1 calc(50% - 10px); /* Two inputs per row on mobile */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .filter-input {
+    flex: 1 1 calc(25% - 10px); /* Four inputs per row on desktop */
+  }
+}
+
+.filter-input label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.filter-input input {
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s ease;
+  font-size: 14px; /* Default font size */
+}
+
+.filter-input input:focus {
+  border-color: #ffa500; /* Highlight on focus */
+  outline: none;
+}
+
+.voter-table {
+  width: 100%; /* Full width */
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.voter-table th, .voter-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ffa500; /* Ensure border color matches */
+  word-wrap: break-word; /* Allow text to wrap */
+}
+
+.voter-table th {
+  background-color: #ffa500; /* Header color */
+  color: #fff; /* White text for contrast */
+}
+
+.voter-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping */
+}
+
+.voter-table tr:hover {
+  background-color: #e0e0e0; /* Highlight on hover */
+}
+
+.totalcounter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 20px;
+  background-color: #ffffff; /* Light background for total counter */
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.total-box {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: calc(50% - 15px); /* Two per row on mobile */
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: transform 0.2s; /* Animation effect */
+}
+
+.total-box:hover {
+  transform: scale(1.05); /* Scale on hover */
+}
+
+.clear-button, .print-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #ffa500; /* Button color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s; /* Added transform */
+}
+
+.clear-button:hover, .print-button:hover {
+  background-color: #e08e00; /* Darker on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
